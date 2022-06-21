@@ -43,6 +43,7 @@ body {
 	}
 }
 
+
 .title {
 	font-size: 1.85rem;
 	line-height: 1;
@@ -280,7 +281,9 @@ body {
 			display: none;
 		}
 	}
-
+	body._lock{
+		overflow: hidden;
+	}
 .web {
 	margin: 0px 0px 2px 0px;
 	&__container {
@@ -291,15 +294,16 @@ body {
 		@media (max-width: 1020px) {
 			padding: 200px 0px 90px 0px;
 		}
+		@media (max-width: 602px) {
+			padding: 180px 0px 180px 0px;
+		}
 		@media (max-width: 480px) {
 			padding: 120px 0px;
 	
 		}
 	}
 
-	body._lock{
-		overflow: hidden;
-	}
+
 
 
 
@@ -403,6 +407,12 @@ body {
 	&__strela {
 		display: flex;
 		padding: 10px;
+		@media (max-width: 602px) {
+		margin: -20px 0px 0px 0px;
+		}
+		@media (max-width: 602px) {
+			margin: 20px 0px 0px 0px;
+			}
 	}
 
 	&__strela img {
@@ -438,23 +448,23 @@ body {
 		}
 
 		@media (max-width: 480px) {
-			padding: 85px 50px 0px 50px;
+			padding: 80px 50px 0px 50px;
 
 		}
 	}
 
-	&__title {}
+	&__title {
+	}
 
 	&__text {}
 
 	&__sub-text {
-		padding: 0px 15px 0px 15px;
 
 	}
 
 	&__rov {
 		display: flex;
-		margin: 0px -75px;
+		margin: 0px -35px;
 		justify-content: center;
 
 		@media (max-width: 855px) {
@@ -463,8 +473,9 @@ body {
 	}
 
 	&__culomn {
-		padding: 0px 75px;
+		padding: 0px 35px;
 		flex: 0 1 33.333%;
+		margin: 0px 15px;
 
 		@media (max-width: 855px) {
 			padding: 0px 0px 30px 0px;
